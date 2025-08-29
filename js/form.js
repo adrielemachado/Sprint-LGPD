@@ -20,7 +20,7 @@ function validarEnvio(){
     const TermosCheckbox = document.getElementById("termosCheckbox");
     const enviarBtn = document.getElementById("enviarBtn");
 
-    enviarBtn.disabled = TermosCheckbox.checked;
+    enviarBtn.disabled = !TermosCheckbox.checked;
 }
 
 function Post(form) {
