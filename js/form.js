@@ -17,7 +17,7 @@ class contato {
 }
 
 function validarEnvio(){
-    const TermosCheckbox = document.getElementById("TermosCheckbox");
+    const TermosCheckbox = document.getElementById("termosCheckbox");
     const enviarBtn = document.getElementById("enviarBtn");
 
     enviarBtn.disabled = TermosCheckbox.checked;
@@ -25,7 +25,7 @@ function validarEnvio(){
 
 function Post(form) {
 
-    const TermosCheckbox = document.getElementById("TermosCheckbox");
+    const TermosCheckbox = document.getElementById("termosCheckbox");
     const newsletterCheckbox = document.getElementById("newsletter");
 
     if(!TermosCheckbox.checked){
@@ -47,7 +47,7 @@ function Post(form) {
 
       alert(`Obrigado, ${data.nome}! Sua mensagem de ${data.tipo} foi enviada com sucesso.`);
 
-      termosCheckbox.checked = false;
+      TermosCheckboxermosCheckbox.checked = false;
       newsletterCheckbox = false;
 
       validarEnvio();

@@ -126,3 +126,10 @@ button {
     background-color: cccc;
     transform: none;
 }
+
+#mensagemid{
+    resize: none;
+    width: 320px;
+    height: 100px;
+    border-radius: 8px;
+}
